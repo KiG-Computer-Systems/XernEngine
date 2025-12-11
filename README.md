@@ -13,7 +13,7 @@ XernEngine is a 2D game engine for browser-based games, developed in JavaScript.
 ## Getting Started
 
 1. Install dependencies:
-2. 
+ 
 ```npm install```
 
 Run an example game:
