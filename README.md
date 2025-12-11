@@ -15,9 +15,11 @@ XernEngine is a 2D game engine for browser-based games, developed in JavaScript.
 1. Install dependencies:
 ```bash
 npm install```
+
 Run an example game:
 
 ```bash
 npm start```
+
 ## License
 This project is licensed under the Apache 2.0 License.
