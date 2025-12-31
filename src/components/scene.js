@@ -1,14 +1,23 @@
 // Сцены
 export class Scene {
     constructor() {
-        this.entities = [];
+        if (!this.entities) {
+            throw new Error('Entities array is null');
+        }
+        this.entities = this.entities || [];
     }
 
     addEntity(entity) {
-        this.entities.push(entity);
-    }
+        if (!entity) {
+            throw new Error('Entity is null or undefined');
+        }
+        try {
+            this.entities.push(entity);
+        } catch (e) {
+            throw new Error(`Cannot add entity to scene: ${e.message}`);
+        }
 
-    removeEntity(entity) {
+    removeEntity(entity) ,
         this.entities = this.entities.filter(e => e !== entity);
     }
 
