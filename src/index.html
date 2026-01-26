@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>XernEngine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XernEngine Game</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    #gameCanvas {
+      background: #1a1a2e;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <div id="app"></div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
 </body>
 </html>
