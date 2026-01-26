@@ -1,10 +1,7 @@
 // Сцены
 export class Scene {
     constructor() {
-        if (!this.entities) {
-            throw new Error('Entities array is null');
-        }
-        this.entities = this.entities || [];
+        this.entities = [];
     }
 
     addEntity(entity) {
@@ -16,8 +13,9 @@ export class Scene {
         } catch (e) {
             throw new Error(`Cannot add entity to scene: ${e.message}`);
         }
+    }
 
-    removeEntity(entity) ,
+    removeEntity(entity) {
         this.entities = this.entities.filter(e => e !== entity);
     }
 
