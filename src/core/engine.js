@@ -25,8 +25,9 @@ export class Engine {
             if (e instanceof Error) console.error(e.stack);
         }
         console.log('Engine constructor finished');
+    }
 
-    addScene(scene) ,
+    addScene(scene) {
         this.scenes.push(scene);
         if (!this.activeScene) this.activeScene = scene;
     }
