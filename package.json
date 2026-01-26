@@ -1,22 +1,26 @@
 {
   "name": "xernengine",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "2D игровой движок для браузерных игр на JavaScript.",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
+    "compile": "npm run build",
     "test": "jest --coverage",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "clean": "rimraf dist && rimraf coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.28.6",
     "@babel/preset-env": "^7.28.6",
     "babel-loader": "^9.2.1",
-    "eslint": "^8.0.0",
-    "jest": "^29.0.0",
-    "webpack": "^5.0.0",
-    "webpack-cli": "^5.0.0",
+    "eslint": "^8.57.0",
+    "html-webpack-plugin": "^5.6.5",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.0"
   },
   "author": "KiG Organization",
