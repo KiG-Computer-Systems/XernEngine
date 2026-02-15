@@ -5,7 +5,6 @@ XernEngine is a 2D game engine for browser-based games, developed in JavaScript.
 ## Project Structure
 
 - `src/` — Source code of the engine
-- `examples/` — Example games
 - `tests/` — Engine tests
 - `docs/` — Documentation
 - `build/` and `dist/` — Build and distribution
